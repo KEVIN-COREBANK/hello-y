@@ -1,0 +1,71 @@
+{
+  "name": "hello-y",
+	"displayName": "hello-Y",
+	"description": "Y[wai] IDE for VSCODE Considerations",
+	"version": "0.0.9",
+	"publisher":"KEVIN-COREBANK",
+	"icon": "kevin-corebank.png",
+	"engines": {
+		"vscode": "^1.58.0"
+	},
+	"keywords": [
+        "wysiwyg",
+		"editor",
+		"html",
+        "html5",
+        "previewer",
+        "y",
+        "ide"
+    ],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+        "onCommand:helloY.ide"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "helloY.ide",
+            "title": "helloY ideA",
+			"icon": {
+				"light": "kevin-corebank.png",
+				"dark": "kevin-corebank.png"
+			  }
+		}],
+		"menus": {
+			"editor/title": [
+			  {
+				"command": "helloY.ide",
+				"alt": "helloY.ide",
+				"group": "navigation"
+			  }
+			]
+		  },
+	"keybindings": [{
+		"command": "helloY.ide",
+			"key": "ctrl+y",
+			"mac": "cmd+y"
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+        "@types/vscode": "^1.58.0",
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.2.2",
+        "@types/node": "14.x",
+        "eslint": "^7.27.0",
+        "glob": "^7.1.7",
+        "mocha": "^8.4.0",
+        "typescript": "^4.3.2",
+        "vscode-test": "^1.5.2"
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KEVIN-COREBANK/hello-y"
+	  }
+}

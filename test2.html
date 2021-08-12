@@ -1,0 +1,65 @@
+<!--INSERT8 1626614197878-->
+<!--INSERT7 1626614194948-->
+<!--INSERT6 1626614191683-->
+<!--INSERT5 1626614189976-->
+<!--INSERT4 1626614186614-->
+<!--INSERT3 1626613243820-->
+<!--INSERT4 1626613080751-->
+<!--INSERT3 1626613077620-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'none'; img-src ${webview.cspSource} https:; script-src ${webview.cspSource}; style-src ${webview.cspSource};"
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src self; img-src vscode-resource:; script-src vscode-resource: 'self' 'unsafe-inline'; style-src vscode-resource: 'self' 'unsafe-inline'; "/>
+  <!--script type="text/javascript" src="test2.js"></script-->  
+  <script>
+    const vsapi = acquireVsCodeApi(); 
+    function moduleAdd(){
+      alert("clicked!");
+      var name = prompt("Enter Your Name", "Jon");
+      vsapi.postMessage({command: "alert", text: "BUTTON PRESSED!"});
+    }
+  </script>
+  
+  <title>Module Manager</title>
+  <style> h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;}
+  </style>
+</head>
+<body style="background-color:rgb(60,99,201);"><h1>Test2.html   KEVIN-9 8 7 6 5 4 5 4 COREBANK</h1>
+  <p>For redirect to test3.html, <a href="./test3.html">click here</a>.</p>
+  
+  <button onclick="moduleAdd()">Click me</button>
+  
+  
+  
+  <!--script>
+      const vscode = acquireVsCodeApi(); 
+    function moduleAdd(){
+      alert("clicked!12")
+      alert("clicked!2")
+      alert("clicked!2333333333333333333333333333333")
+      alert("clicked!244444444444444444")
+      vscode.postMessage({command: "alert", text: "BUTTON PRESSED!"});
+    }
+  </script--> 
+</body>
+</html>
+</html>
+</html>
+</html>
+</html>
+</html>
+</html>
+</html>
+</html>
